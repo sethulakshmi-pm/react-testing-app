@@ -9,19 +9,44 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^3.5.2"
+    "web-vitals": "^3.5.2",
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "eslint": "^5.16.0",
+    "express": "^4.17.3",
+    "flow-bin": "^0.100.0",
+    "google-closure-compiler": "^20200504.0.0",
+    "graphql": "^15.0.0",
+    "gzip-size-cli": "^5.1.0",
+    "husky": "^0.11.9",
+    "jest": "^26.6.3",
+    "multiparty": "^4.2.3",
+    "prettier": "^1.18.2",
+    "pretty-bytes-cli": "^3.0.0",
+    "protractor": "^7.0.0",
+    "proxyquire": "^1.7.11",
+    "qs": "^6.10.3",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1",
+    "rollup": "^1.0.0",
+    "rollup-plugin-babel": "^4.0.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "serve-index": "^1.9.1",
+    "sinon": "^7.0.0",
+    "uuid": "^3.0.1",
+    "webdriver-manager": "^12.1.8",
+    "apollo-server-express": "^2.14.2",
+    "object-assign": "^4.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "webdriver:start": "webdriver-manager update && webdriver-manager start",
+    "test:e2e:local": "IS_TEST=true protractor src/protractor.local.config.js",
+    "test:e2e:saucelabs": "IS_TEST=true protractor src/protractor.saucelabs.config.js",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
