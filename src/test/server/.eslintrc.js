@@ -4,7 +4,7 @@ module.exports = {
   },
   env: {
     node: true,
-    browser: false
+    browser: true
   },
   rules: {
     'no-console': 'off'
