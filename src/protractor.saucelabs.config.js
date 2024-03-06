@@ -8,15 +8,15 @@ exports.config = {
   sauceUser: "oauth-pmsethulakshmi1994-71b99",
   sauceKey: "c886851b-044e-4c37-8e9a-62867cea27a5",
   sauceBuild: "selenium-build-83FYR",
-  region: "us",
-  sauceRegion: "us",
+  region: "eu",
+  sauceRegion: "eu",
   // See https://wiki.saucelabs.com/display/DOCS/Platform+Configurator#/
   multiCapabilities: [
     {
       sauceUser: "oauth-pmsethulakshmi1994-71b99",
       sauceKey: "c886851b-044e-4c37-8e9a-62867cea27a5",
       sauceBuild: "selenium-build-83FYR",
-      sauceRegion: "us",
+      sauceRegion: "eu",
       browserName: "chrome",
       browserVersion: "latest",
       platformName: "Windows 11",
@@ -24,7 +24,7 @@ exports.config = {
         build: "selenium-build-83FYR",
         name: "sethutestname",
         hostname: "ondemand.eu-central-1.saucelabs.com",
-        region: "us",
+        region: "eu",
       },
     },
   ],

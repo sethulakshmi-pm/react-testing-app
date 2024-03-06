@@ -2,7 +2,7 @@ const {
   registerTestServerHooks,
   getE2ETestBaseUrl,
 } = require("../../server/controls");
-const { registerBaseHooks, restartBrowser } = require("../base");
+const { registerBaseHooks } = require("../base");
 
 describe("webvitalsAsCustomEvent", () => {
   registerTestServerHooks();
@@ -10,7 +10,7 @@ describe("webvitalsAsCustomEvent", () => {
 
   describe("webvitals", () => {
     beforeEach(() => {
-      restartBrowser();
+      //restartBrowser();
 
       browser.get(
         getE2ETestBaseUrl("12_webvitalsAsCustomEvent/webvitalsAsCustomEvent")
