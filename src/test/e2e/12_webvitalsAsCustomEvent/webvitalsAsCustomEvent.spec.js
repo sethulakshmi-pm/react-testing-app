@@ -12,9 +12,7 @@ describe("webvitalsAsCustomEvent", () => {
     beforeEach(() => {
       //restartBrowser();
 
-      browser.get(
-        getE2ETestBaseUrl("12_webvitalsAsCustomEvent/webvitalsAsCustomEvent")
-      );
+      browser.get("https://sethu-web-vital-test.netlify.app/");
       browser.sleep(2000);
 
       // Ensure button1 is clicked to get FID LCP values
