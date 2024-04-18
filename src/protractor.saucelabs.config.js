@@ -1,13 +1,30 @@
-const sauceUser = "oauth-pmsethulakshmi1994-71b99";
-const sauceKey = "c886851b-044e-4c37-8e9a-62867cea27a5";
-const sauceBuild = "selenium-build-83FYR";
+// const sauceUser = "oauth-pmsethulakshmi1994-71b99";
+// const sauceKey = "c886851b-044e-4c37-8e9a-62867cea27a5";
+// const sauceBuild = "selenium-build-83FYR";
+const sauceUser = "oauth-sethu17molus-8c3ef";
+const sauceKey = "bfdc2635-1a65-4cb3-9679-4df8a5b05bc5";
+const sauceBuild = "selenium-build-PWZ1N";
+
+// ChromeOptions browserOptions = new ChromeOptions();
+// browserOptions.setPlatformName("Windows 11");
+// browserOptions.setBrowserVersion("latest");
+// Map<String, Object> sauceOptions = new HashMap<>();
+// sauceOptions.put("username", "oauth-sethu17molus-8c3ef");
+// sauceOptions.put("accessKey", "bfdc2635-1a65-4cb3-9679-4df8a5b05bc5");
+// sauceOptions.put("build", "selenium-build-PWZ1N");
+// sauceOptions.put("name", "<your test name>");
+// browserOptions.setCapability("sauce:options", sauceOptions);
+
+// URL url = new URL("https://ondemand.eu-central-1.saucelabs.com:443/wd/hub");
+// RemoteWebDriver driver = new RemoteWebDriver(url, browserOptions);
+
 
 exports.config = {
   specs: ["test/e2e/**/*.spec.js"],
   hostname: "ondemand.eu-central-1.saucelabs.com",
-  sauceUser: "oauth-pmsethulakshmi1994-71b99",
-  sauceKey: "c886851b-044e-4c37-8e9a-62867cea27a5",
-  sauceBuild: "selenium-build-83FYR",
+  sauceUser: "oauth-sethu17molus-8c3ef",
+  sauceKey: "bfdc2635-1a65-4cb3-9679-4df8a5b05bc5",
+  sauceBuild: "selenium-build-PWZ1N",
   sauceRegion: "eu",
 
   // multiCapabilities: [
@@ -34,7 +51,8 @@ exports.config = {
       "chrome",
       "latest",
       "Windows 11",
-      '"chrome", "latest", "Windows 11", '
+      // '"chrome", "latest", "Windows 11"'
+      'SETHULAKSHMI TESTING."'
     )
     // newSaucelabsCapability(
     //   "internet explorer",
